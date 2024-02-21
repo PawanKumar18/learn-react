@@ -3,11 +3,26 @@
 // import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Profile from './components/profile'
+import Gallery from './qcomps/state'
+import Form from './qcomps/stuckForm'
+import FeedbackForm from './qcomps/thankYouCrash'
+import Counter from './components/queueUpdates'
+import Scoreboard from './qcomps/updObjectsForm'
+import List from './qcomps/artistsRemoveArr'
+import BucketList from './qcomps/arrObj'
+
+
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <Profile />
+      <Gallery />
+      <Form />
+      <FeedbackForm />
+      <Counter />
+      <Scoreboard />
+      <List />
+      <BucketList />
     </div>
   )
 }

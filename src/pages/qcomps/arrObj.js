@@ -15,20 +15,20 @@ export default function BucketList() {
 
   function handleToggleMyList(artworkId, nextSeen) {
     const tmpList = myList.map(e => {
-        if (e.id === artworkId) {
-            e.seen = nextSeen
-        }
-        return e
+      if (e.id === artworkId) {
+        return { ...e, seen: nextSeen };
+      }
+      return e
     });
     setMyList(tmpList);
   }
 
   function handleToggleYourList(artworkId, nextSeen) {
     const tmpList = yourList.map(e => {
-        if (e.id === artworkId) {
-            e.seen = nextSeen
-        }
-        return e
+      if (e.id === artworkId) {
+        return { ...e, seen: nextSeen };
+      }
+      return e
     });
     setYourList(tmpList);
   }
