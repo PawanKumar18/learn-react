@@ -8,8 +8,10 @@ import Form from './qcomps/stuckForm'
 import FeedbackForm from './qcomps/thankYouCrash'
 import Counter from './components/queueUpdates'
 import Scoreboard from './qcomps/updObjectsForm'
-import List from './qcomps/artistsRemoveArr'
+import List from './qcomps/list_keys_id'
 import BucketList from './qcomps/arrObj'
+import RequestTracker from './qcomps/shoppingCart'
+import RecipeList from './qcomps/recipes'
 
 
 
@@ -21,8 +23,10 @@ export default function Home() {
       <FeedbackForm />
       <Counter />
       <Scoreboard />
-      <List />
       <BucketList />
+      <RequestTracker />
+      <RecipeList />
+      <List />
     </div>
   )
 }
